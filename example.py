@@ -5,8 +5,7 @@ from loadin.loadin import loading
 @loading(style='cycle', tips='loading')
 def ha():
     import time
-    for i in range(3):
-        time.sleep(1)
+    time.sleep(3)
 
 
 if __name__ == '__main__':
