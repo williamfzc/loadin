@@ -3,15 +3,15 @@ import sys
 from .loadin_animation import STYLE_DICT
 
 
-def start_loadin(style, tips):
-    if not (isinstance(style, str) and isinstance(tips, str)):
+def start_loadin(_style, _tips):
+    if not (isinstance(_style, str) and isinstance(_tips, str)):
         raise TypeError('Style and tips must be str.')
-    if style not in STYLE_DICT:
-        raise KeyError('Style {} not support.'.format(style))
+    if _style not in STYLE_DICT:
+        raise KeyError('Style {} not support.'.format(_style))
 
     ui_process = multiprocessing.Process(
-        target=STYLE_DICT[style],
-        args=(tips,)
+        target=STYLE_DICT[_style],
+        args=(_tips,)
     )
     ui_process.start()
     return ui_process
@@ -20,7 +20,7 @@ def start_loadin(style, tips):
 def end_loadin(_proc):
     if _proc.is_alive():
         _proc.terminate()
-    sys.stdout.write('\n')
+    sys.stdout.write('Done! \n')
     sys.stdout.flush()
 
 

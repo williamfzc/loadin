@@ -8,10 +8,20 @@ ALL YOU NEED is a decorator:
 	from loadin.loadin import loading
 
 
-	@loading(style='cycle', tips='loading')
-	def ha():
-	    import time
-	    time.sleep(3)
+    @loading(style='point', tips='download some files')
+    def download():
+        time.sleep(3)
+
+
+    @loading(style='cycle', tips='save files')
+    def save():
+        time.sleep(3)
+
+
+    if __name__ == '__main__':
+        download()
+        save()
+
 
 It's DONE!
 
