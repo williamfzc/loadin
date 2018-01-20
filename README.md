@@ -1,6 +1,6 @@
 # Loadin
-[![PyPI](https://img.shields.io/pypi/loadin.svg)](https://pypi.python.org/pypi/loadin)
-
+[![PyPI](https://img.shields.io/pypi/v/loadin.svg)](https://pypi.python.org/pypi/loadin)
+[![codebeat badge](https://codebeat.co/badges/3cc04ca8-2dec-4281-8abd-c4281f9df5de)](https://codebeat.co/projects/github-com-williamfzc-loadin-master)
 
 > **A very very simple way to apply terminal-animation to your function!**
 
