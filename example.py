@@ -1,4 +1,6 @@
 from loadin.loadin import loading
+# if you install loadin by pip, here may be:
+# from loadin import loading
 import time
 
 

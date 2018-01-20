@@ -9,7 +9,7 @@
 ## Usage ##
 ALL YOU NEED is a decorator:
 
-	from loadin.loadin import loading
+	from loadin import loading
 
 
     @loading(style='point', tips='download some files')
