@@ -1,6 +1,6 @@
 # Loadin
-[![PyPI](https://img.shields.io/pypi/v/nine.svg)]()
-[![Codecov](https://img.shields.io/codecov/c/github/codecov/example-python.svg)]()
+[![Codecov](https://img.shields.io/codecov/c/github/codecov/example-python.svg)](https://github.com/williamfzc/loadin)
+[![PyPI](https://img.shields.io/pypi/v/nine.svg)](https://github.com/williamfzc/loadin)
 > **A very very simple way to apply terminal-animation to your function!**
 
 ## Setup ##
