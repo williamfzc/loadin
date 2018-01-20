@@ -30,6 +30,10 @@ def end_loadin(_proc, _end_flag):
 
 def loading(style=None, tips=None, end_flag=None):
     tips += ' '
+    if not style:
+        style = 'point'
+    if not tips:
+        raise ValueError('tips can\'t be empty')
 
     def inner(func):
         @wraps(func)
