@@ -4,6 +4,8 @@
 
 > **A very very simple way to apply terminal-animation to your function!**
 
+> Less than 50 lines.
+
 ## Setup ##
 
     pip install loadin
@@ -48,6 +50,11 @@ It's DONE!
 - **tips**: any string, can't be empty
 - **style**: 'point', 'cycle'
 - **end_flag**: True or False
+
+## How it works? ##
+
+- Build a process to refresh your terminal.
+- For detail, you can view the code directly.
 
 
 ## Bug ##
