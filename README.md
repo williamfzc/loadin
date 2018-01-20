@@ -1,6 +1,6 @@
 # Loadin
 
-> **A very very simple way to apply terminal-animation for your function!**
+> **A very very simple way to apply terminal-animation to your function!**
 
 ## Usage ##
 ALL YOU NEED is a decorator:
