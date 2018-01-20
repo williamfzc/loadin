@@ -2,6 +2,10 @@
 
 > **A very very simple way to apply terminal-animation to your function!**
 
+## Setup ##
+
+    pip install loadin
+
 ## Usage ##
 ALL YOU NEED is a decorator:
 
