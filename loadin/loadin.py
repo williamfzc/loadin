@@ -1,5 +1,6 @@
 import multiprocessing
-import sys
+from functools import wraps
+from sys import stdout as out
 from .loadin_animation import STYLE_DICT
 
 
@@ -17,21 +18,25 @@ def start_loadin(_style, _tips):
     return ui_process
 
 
-def end_loadin(_proc):
+def end_loadin(_proc, _end_flag):
     if _proc.is_alive():
         _proc.terminate()
-    sys.stdout.write('Done! \n')
-    sys.stdout.flush()
+    if _end_flag:
+        out.write('\nDone!\n')
+    else:
+        out.write('\n')
+    out.flush()
 
 
-def loading(style=None, tips=None):
+def loading(style=None, tips=None, end_flag=None):
     tips += ' '
 
     def inner(func):
+        @wraps(func)
         def _inner(*args, **kwargs):
             _process = start_loadin(style, tips)
             result = func(*args, **kwargs)
-            end_loadin(_process)
+            end_loadin(_process, end_flag)
             return result
         return _inner
     return inner
