@@ -56,8 +56,10 @@ def loading(tips, style=None, end_flag=False, speed=CYCLE_TIME):
         @wraps(func)
         def _inner(*args, **kwargs):
             _process = start_loadin(style, tips, speed)
-            result = func(*args, **kwargs)
-            end_loadin(_process, end_flag)
+            try:
+                result = func(*args, **kwargs)
+            finally:
+                end_loadin(_process, end_flag)
             return result
         return _inner
     return inner

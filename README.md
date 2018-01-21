@@ -13,7 +13,7 @@
 ## Usage ##
 ALL YOU NEED is ONE-LINE:
 
-    @loading(tips='download some files')
+    @loading('download some files')
     def download():
         time.sleep(3)
 
@@ -26,19 +26,15 @@ OR more animation:
 	from loadin import loading
 
 
-    @loading(style='point', tips='download some files')
+    @loading(style='wave', tips='download some files', end_flag=False, speed='fast')
     def download():
         time.sleep(3)
 
 
-    @loading(style='cycle', tips='save files')
+    @loading('download')
     def save():
-        time.sleep(3)
-
-
-    if __name__ == '__main__':
-        download()
-        save()
+        for i in range(3):
+            time.sleep(1)
 
 
 It's DONE!
@@ -50,6 +46,7 @@ It's DONE!
 - **tips**: any string, can't be empty
 - **style**: 'point', 'cycle'
 - **end_flag**: True or False
+- **speed**: 'fast', 'normal' or 'slow'
 
 ## How it works? ##
 
