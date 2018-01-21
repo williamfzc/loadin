@@ -44,7 +44,7 @@ It's DONE!
 ## Args ##
 
 - **tips**: any string, can't be empty
-- **style**: 'point', 'cycle'
+- **style**: 'point', 'cycle', 'wave'
 - **end_flag**: True or False
 - **speed**: 'fast', 'normal' or 'slow'
 
