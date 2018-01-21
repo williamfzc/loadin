@@ -5,12 +5,12 @@ import time
 
 
 # example
-@loading(style='point', tips='download some files', end_flag=True)
+@loading(style='wave', tips='download some files', end_flag=True)
 def download():
     time.sleep(3)
 
 
-@loading(style='cycle', tips='save files')
+@loading('download')
 def save():
     for i in range(3):
         time.sleep(1)
