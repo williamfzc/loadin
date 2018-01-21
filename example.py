@@ -5,7 +5,7 @@ import time
 
 
 # example
-@loading(style='wave', tips='download some files', end_flag=True)
+@loading(style='wave', tips='download some files', end_flag=False, speed='fast')
 def download():
     time.sleep(3)
 
