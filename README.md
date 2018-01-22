@@ -4,7 +4,7 @@
 
 > **A very very simple way to apply terminal-animation to your function!**
 
-> Less than 50 lines.
+> **RECOMMEND:** This project should not be used in serious software. Take it as a toy :)
 
 ## Setup ##
 
@@ -43,10 +43,14 @@ It's DONE!
 
 ## Args ##
 
-- **tips**: any string, can't be empty
-- **style**: 'point', 'cycle', 'wave'
-- **end_flag**: True or False
-- **speed**: 'fast', 'normal' or 'slow'
+- **tips**: tips you want to show in terminal 
+> any string, can't be empty
+- **style**: style of animation
+> 'point', 'cycle', 'wave'
+- **end_flag**: if True, 'Done' will be showed at the end of your function 
+> True or False
+- **speed**: animation speed
+> 'fast', 'normal' or 'slow'
 
 ## How it works? ##
 
